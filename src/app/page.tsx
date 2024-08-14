@@ -1,9 +1,8 @@
+import { FindPrimeMedianNumbersForm } from '@/components/find-prime-median-numbers-form'
 import { ModeToggle } from '@/components/theme-toggle'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import { AtSign, Github, Linkedin, Twitter } from 'lucide-react'
 
-export default function Home() {
+export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="flex w-full pt-24 pl-24 pr-24 max-w-7xl items-center justify-between text-sm">
@@ -11,10 +10,7 @@ export default function Home() {
         <ModeToggle />
       </div>
 
-      <div className="flex w-full max-w-sm items-center space-x-2">
-        <Input type="number" placeholder="Enter a number" />
-        <Button type="submit">Send</Button>
-      </div>
+      <FindPrimeMedianNumbersForm />
 
       <div className="flex w-full items-center justify-center gap-4 p-24 bg-black ">
         <p>Developed by Guilherme Crozariol</p>
